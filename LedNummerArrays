@@ -1,0 +1,32 @@
+
+//							           {   0,    1,     2,    3,    4,    5,   6}
+//String indicatorNames[]= {vijf, tien, kwart, voor, over, half, uur};
+int indicators[] = 		{   7,	  2,    17,   12,   29,	  24,  78};
+int indicatorSize[] = 		{   4,	  4,     5,	   4,	 4,    4,   3};
+
+//String hourNames[] = 	{x, een, twee, drie, vier, vijf, zes, zeven, acht, negen, tien, elf, twaalf};
+int hours[] = 				{0,  41,   37,   33,   51,   47,  44,    61,   73,    55,   69,  66,     82};
+int hourSize[] = 			{0,   3,    4,    4,    4,    4,   3,     5,    4,     5,    4,   3,      6};
+
+//String modulo of 5		{first, second, third, forth}
+int modulo[] = 			{91, 90, 89, 88};
+
+// ----------------------------------------------------
+//  0 - 4		(uur) uur 				6
+//  5 - 9		vijf over 	 (uur)		0, 4
+// 10 - 14 		tien over 	 (uur)		1, 4
+// 15 - 19		kwart over 	 (uur)		2, 4
+
+// 20 - 24		10 voor half (uur + 1)	1, 3, 5
+// 25 - 29		5 voor half  (uur + 1)  0, 3, 5
+// 30 - 34		half 		 (uur + 1)  5
+
+// 35 - 39		5 over half  (uur + 1)	0, 4, 5
+// 40 - 44		10 over half (uur + 1)  1, 4, 5
+// 45 - 49		kwart voor   (uur + 1)  2, 3
+
+// 50 - 54		10 voor 	 (uur + 1)  1, 3
+// 55 - 59		5 voor 		 (uur + 1)  0, 3
+// ----------------------------------------------------
+
+
